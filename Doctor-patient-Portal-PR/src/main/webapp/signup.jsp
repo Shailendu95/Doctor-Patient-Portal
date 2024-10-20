@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page isELIgnored="false" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,13 +39,13 @@
 
 						<!-- message print -->
 						<!-- for success msg -->
-					<!--  	<c:if test="${not empty successMsg }">
+					  	<c:if test="${not empty successMsg }">
 							<p class="text-center text-success fs-3">${successMsg}</p>
 							<c:remove var="successMsg" scope="session" />
 						</c:if>
 
 						<!-- for error msg -->
-					<!--	<c:if test="${not empty errorMsg }">
+						<c:if test="${not empty errorMsg }">
 							<p class="text-center text-danger fs-3">${errorMsg}</p>
 							<c:remove var="errorMsg" scope="session" />
 						</c:if>

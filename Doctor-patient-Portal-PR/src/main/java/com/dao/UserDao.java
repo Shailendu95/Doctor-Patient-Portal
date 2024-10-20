@@ -28,9 +28,12 @@ import com.entity.User;
 				pstmt.setString(2, user.getEmail());
 				pstmt.setString(3, user.getPassword());
 
-				pstmt.executeUpdate();
+				int i=pstmt.executeUpdate();
 
-				f = true; // if query execute successfully then f becomes true otherwise false...
+				if(i==1)
+				{
+				f = true;
+				} // if query execute successfully then f becomes true otherwise false...
 
 			} catch (Exception e) {
 				e.printStackTrace();
