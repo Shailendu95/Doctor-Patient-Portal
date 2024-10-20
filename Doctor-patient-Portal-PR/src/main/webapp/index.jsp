@@ -8,14 +8,19 @@
 <%@include file="component/allcss.jsp"%> 
 
 <style type="text/css">
-.paint-card {
+.my-card {
 	box-shadow: 0px 0px 10px 1px maroon;
-	/*box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);*/
+	/box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);/
 }
 </style>
+
+
+
 </head>
 <body>
 <%@include file="component/navbar.jsp"%>
+
+
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -23,16 +28,22 @@
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
   <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="img/hospital1.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="img/hospital2.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="img/hospital3.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
+			<div class="carousel-item active">
+				<img src="img/doctor_2.jpg" class="d-block w-100" alt="..."
+					height="600px">
+			</div>
+			<div class="carousel-item">
+				<img src="img/doctor_1.jpg" class="d-block w-100" alt="..."
+					height="600px">
+			</div>
+			<div class="carousel-item">
+				<img src="img/hospital4.jpg" class="d-block w-100" alt="..."
+					height="600px">
+			</div>
+			<div class="carousel-item">
+				<img src="img/doctor_3.jpg" class="d-block w-100" alt="..."
+					height="600px">
+			</div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
@@ -42,6 +53,10 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+
+
+<hr>
+
 
 <div class="container p-3">
 		<p class="text-center mt-2 mb-5 fs-2 myP-color">Some key Features of our
@@ -102,7 +117,7 @@
 			<!-- 2nd col -->
 			
 				<div class="col-md-4 mt-2 mys-card">
-					<img class="mt-3" alt="" src="img/hospital1.jpg" height="440px"
+					<img class="mt-3" alt="" src="img/doctor_1.jpg" height="440px"
 						width="470px">
 				</div>
 			
@@ -110,14 +125,19 @@
 
 		</div>
 	</div>
-<hr>
-<div class="container p-2">
+	
+	<hr>
+	
+	
+	<!-- Second Div Container -->
+
+	<div class="container p-2">
 		<p class="text-center fs-2 myP-color">Our Team</p>
 		<div class="row">
 			<div class="col-md-3">
 				<div class="card my-card">
 					<div class="card-body text-center">
-						<img alt="" src="img/doctor1.jpg" height="300px" width="230px">
+						<img alt="" src="img/doc1.jpg" height="300px" width="230px">
 						<p class="fw-bold fs-5">Dr. John</p>
 						<p class="fs-7">(CEO & Chairman)</p>
 					</div>
@@ -126,7 +146,7 @@
 			<div class="col-md-3">
 				<div class="card my-card">
 					<div class="card-body text-center">
-						<img alt="" src="img/doctor2.jpg" height="300px" width="230px">
+						<img alt="" src="img/doc2.jpg" height="300px" width="230px">
 						<p class="fw-bold fs-5">Dr. Brad</p>
 						<p class="fs-7">(Chief Doctor)</p>
 					</div>
@@ -135,7 +155,7 @@
 			<div class="col-md-3">
 				<div class="card my-card">
 					<div class="card-body text-center">
-						<img alt="" src="img/doctor3.jpg" height="300px" width="230px">
+						<img alt="" src="img/doc3.jpg" height="300px" width="230px">
 						<p class="fw-bold fs-5">Dr. Jennifer</p>
 						<p class="fs-7">(Chief Doctor)</p>
 					</div>
@@ -145,7 +165,7 @@
 			<div class="col-md-3">
 				<div class="card my-card">
 					<div class="card-body text-center">
-						<img alt="" src="img/doctor4.jpg" height="300px" width="230px">
+						<img alt="" src="img/doc4.jpg" height="300px" width="230px">
 						<p class="fw-bold fs-5">Dr. Maria</p>
 						<p class="fs-7">(Dean)</p>
 					</div>
@@ -155,8 +175,12 @@
 		</div>
 
 	</div>
+
+	<!-- Second Div Container -->
+
+<!-- footer -->
 	<%@include file="component/footer.jsp"%>
-	
+<!-- end footer -->
 
 </body>
 </html>
