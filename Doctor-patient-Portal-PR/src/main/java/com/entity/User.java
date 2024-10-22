@@ -2,11 +2,18 @@ package com.entity;
 
 public class User {
 
+
+
+
 	private int id;
 	private String fullName;
 	private String email;
 	private String password;
 	
+	public User() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 	
 	public User(String fullName, String email, String password) {
 		super();

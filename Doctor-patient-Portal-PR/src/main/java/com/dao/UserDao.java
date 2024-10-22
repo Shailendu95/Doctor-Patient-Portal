@@ -21,7 +21,7 @@ import com.entity.User;
 
 			try {
 				// insert user in db
-				String sql = "insert into user_details(full_name, email, password) values(?,?,?)";
+				String sql = "insert into users(full_name, email, password) values(?,?,?)";
 
 				PreparedStatement pstmt = conn.prepareStatement(sql);
 				pstmt.setString(1, user.getFullName());
