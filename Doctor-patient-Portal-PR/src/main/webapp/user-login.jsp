@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page isELIgnored="false" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,8 +33,8 @@
     <div class="row">
         <div class="col-md-4 offset-md-4">
             <div class="card my-card">
-                <div class="card-header text-center text-white" style="background-color: #007bff;"> <!-- Updated background color -->
-                    <p class="fs-4 text-center mt-2">
+                 <div class="card-header text-center text-white" style="background-color: #007bff;"> <!-- Updated background color -->
+                    <p class="fs-4 text-center mt-2">  
                         <i class="fa fa-group"></i> User Login
                     </p>
                 </div>
@@ -40,16 +42,16 @@
                 <div class="card-body">
                     <!-- Message Section (optional) -->
                     <!-- success message -->
-                    <!-- <c:if test="${not empty successMsg }">
+                    <c:if test="${not empty successMsg }">
                         <p class="text-center text-success fs-5">${successMsg}</p>
                         <c:remove var="successMsg" scope="session" />
-                    </c:if> -->
+                    </c:if> 
 
                     <!-- error message -->
-                    <!-- <c:if test="${not empty errorMsg }">
+                     <c:if test="${not empty errorMsg }">
                         <p class="text-center text-danger fs-5">${errorMsg}</p>
                         <c:remove var="errorMsg" scope="session" />
-                    </c:if> -->
+                    </c:if> 
                     
                     <!-- Bootstrap Form -->
                     <form action="userLogin" method="post">
