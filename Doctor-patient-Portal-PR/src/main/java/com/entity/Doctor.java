@@ -12,7 +12,7 @@ public class Doctor {
     private String password;
 
 
-    public Doctor(String fullName, String dateOfBirth, String qualification, String specialist, String email, String phone, String password) {
+    public Doctor(int id2, String fullName, String dateOfBirth, String qualification, String specialist, String email, String phone, String password) {
 		// TODO Auto-generated constructor stub
 	}
 

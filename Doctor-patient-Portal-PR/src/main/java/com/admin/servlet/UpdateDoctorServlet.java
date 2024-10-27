@@ -36,7 +36,7 @@ public class UpdateDoctorServlet extends HttpServlet {
 
 			Doctor doctor = new Doctor(id, fullName, dateOfBirth, qualification, specialist, email, phone, password);
 
-			DoctorDAO docDAO = new DoctorDAO(DBConnection.getConn());
+			DoctorDao docDAO = new DoctorDao(DBConnection.getConn());
 
 			boolean f = docDAO.updateDoctor(doctor);
 
