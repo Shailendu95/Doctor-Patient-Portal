@@ -18,7 +18,7 @@ public class DoctorDao {
     public boolean registerDoctor(Doctor doctor) {
         boolean f = false;
         try {
-            String sql = "INSERT INTO doctor(full_Name, dob, qualification, specialist, email, phone, password) VALUES(?,?,?,?,?,?,?)";
+            String sql = "INSERT INTO doctor(fullName, dateOfBirth, qualification, specialist, email, phone, password) VALUES(?,?,?,?,?,?,?)";
             PreparedStatement pstmt = this.conn.prepareStatement(sql);
             pstmt.setString(1, doctor.getFullName());
             pstmt.setString(2, doctor.getDateOfBirth());
@@ -44,8 +44,8 @@ public class DoctorDao {
             while (resultSet.next()) {
                 Doctor doctor = new Doctor();
                 doctor.setId(resultSet.getInt("id"));
-                doctor.setFullName(resultSet.getString("full_Name"));
-                doctor.setDateOfBirth(resultSet.getString("dob"));
+                doctor.setFullName(resultSet.getString("fullName"));
+                doctor.setDateOfBirth(resultSet.getString("dateOfBirth"));
                 doctor.setQualification(resultSet.getString("qualification"));
                 doctor.setSpecialist(resultSet.getString("specialist"));
                 doctor.setEmail(resultSet.getString("email"));
@@ -69,8 +69,8 @@ public class DoctorDao {
             if (resultSet.next()) {
                 doctor = new Doctor();
                 doctor.setId(resultSet.getInt("id"));
-                doctor.setFullName(resultSet.getString("full_Name"));
-                doctor.setDateOfBirth(resultSet.getString("dob"));
+                doctor.setFullName(resultSet.getString("fullName"));
+                doctor.setDateOfBirth(resultSet.getString("dateOfBirth"));
                 doctor.setQualification(resultSet.getString("qualification"));
                 doctor.setSpecialist(resultSet.getString("specialist"));
                 doctor.setEmail(resultSet.getString("email"));
@@ -86,7 +86,7 @@ public class DoctorDao {
     public boolean updateDoctor(Doctor doctor) {
         boolean f = false;
         try {
-            String sql = "UPDATE doctor SET full_Name=?, dob=?, qualification=?, specialist=?, email=?, phone=?, password=? WHERE id=?";
+            String sql = "UPDATE doctor SET fullName=?, dateOfBirth=?, qualification=?, specialist=?, email=?, phone=?, password=? WHERE id=?";
             PreparedStatement pstmt = this.conn.prepareStatement(sql);
             pstmt.setString(1, doctor.getFullName());
             pstmt.setString(2, doctor.getDateOfBirth());
@@ -129,8 +129,8 @@ public class DoctorDao {
             if (resultSet.next()) {
                 doctor = new Doctor();
                 doctor.setId(resultSet.getInt("id"));
-                doctor.setFullName(resultSet.getString("full_Name"));
-                doctor.setDateOfBirth(resultSet.getString("dob"));
+                doctor.setFullName(resultSet.getString("fullName"));
+                doctor.setDateOfBirth(resultSet.getString("dateOfBirth"));
                 doctor.setQualification(resultSet.getString("qualification"));
                 doctor.setSpecialist(resultSet.getString("specialist"));
                 doctor.setEmail(resultSet.getString("email"));

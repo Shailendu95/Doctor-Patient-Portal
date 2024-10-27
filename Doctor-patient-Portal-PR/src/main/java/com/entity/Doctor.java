@@ -11,9 +11,16 @@ public class Doctor {
     private String phone;
     private String password;
 
-    // Getter and setter methods
 
-    public int getId() {
+    public Doctor(String fullName, String dateOfBirth, String qualification, String specialist, String email, String phone, String password) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Doctor() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public int getId() {
         return id;
     }
 
