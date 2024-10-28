@@ -11,16 +11,36 @@ public class Doctor {
     private String phone;
     private String password;
 
+    // Constructor with id
+    public Doctor(int id, String fullName, String dateOfBirth, String qualification, String specialist, String email, String phone, String password) {
+        this.id = id;
+        this.fullName = fullName;
+        this.dateOfBirth = dateOfBirth;
+        this.qualification = qualification;
+        this.specialist = specialist;
+        this.email = email;
+        this.phone = phone;
+        this.password = password;
+    }
 
-    public Doctor(int id2, String fullName, String dateOfBirth, String qualification, String specialist, String email, String phone, String password) {
-		// TODO Auto-generated constructor stub
-	}
+    // Constructor without id (for cases where id is not yet assigned)
+    public Doctor(String fullName, String dateOfBirth, String qualification, String specialist, String email, String phone, String password) {
+        this.fullName = fullName;
+        this.dateOfBirth = dateOfBirth;
+        this.qualification = qualification;
+        this.specialist = specialist;
+        this.email = email;
+        this.phone = phone;
+        this.password = password;
+    }
 
-	public Doctor() {
-		// TODO Auto-generated constructor stub
-	}
+    // Default constructor
+    public Doctor() {
+        // No-arg constructor
+    }
 
-	public int getId() {
+    // Getters and setters for all fields
+    public int getId() {
         return id;
     }
 

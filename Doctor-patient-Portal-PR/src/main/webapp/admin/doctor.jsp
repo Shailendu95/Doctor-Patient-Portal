@@ -1,7 +1,7 @@
 <%@page import="com.entity.Doctor"%>
 <%@page import="com.dao.DoctorDao"%>
 <%@page import="com.entity.Specialist"%>
-<%@page import="java.util.List"%>
+<%@ page import="java.util.List" %> 
 <%@page import="com.db.DBConnection"%>
 <%@page import="com.dao.SpecialistDao"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -24,7 +24,7 @@
 <style type="text/css">
 .my-card {
 	box-shadow: 0px 0px 10px 1px maroon;
-	/*box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);*/
+	/box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);/
 }
 </style>
 <!-- end of customs css for this page -->
