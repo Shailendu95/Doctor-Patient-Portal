@@ -17,7 +17,7 @@
           <a class="nav-link active" aria-current="page" href="doctor-login.jsp">DOCTOR</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">APPOTTMENT</a>
+          <a class="nav-link active" aria-current="page" href="user_appointment.jsp">APPOTTMENT</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="user-login.jsp">USER</a>
@@ -29,7 +29,7 @@
         
        <c:if test="${not empty userObj }">
        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">APPOTTMENT</a>
+          <a class="nav-link active" aria-current="page" href="user_appointment.jsp">APPOTTMENT</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#"> VIEW APPOTTMENT</a>

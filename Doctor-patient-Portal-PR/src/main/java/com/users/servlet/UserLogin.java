@@ -13,7 +13,7 @@ import com.dao.UserDao;
 import com.db.DBConnection;
 import com.entity.User;
 
-@WebServlet("../userLogin")
+@WebServlet("/userLogin")
 public class UserLogin  extends HttpServlet{
 
 	@Override
