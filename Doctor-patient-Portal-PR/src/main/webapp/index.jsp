@@ -33,19 +33,19 @@
   </div>
   <div class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="img/doctor_2.jpg" class="d-block w-100" alt="..."
+				<img src="img/clean.jpg" class="d-block w-100" alt="..."
 					height="600px">
 			</div>
 			<div class="carousel-item">
-				<img src="img/doctor_1.jpg" class="d-block w-100" alt="..."
+				<img src="img/po.jpg" class="d-block w-100" alt="..."
 					height="600px">
 			</div>
 			<div class="carousel-item">
-				<img src="img/hospital4.jpg" class="d-block w-100" alt="..."
+				<img src="img/lo.jpg" class="d-block w-100" alt="..."
 					height="600px">
 			</div>
 			<div class="carousel-item">
-				<img src="img/doctor_3.jpg" class="d-block w-100" alt="..."
+				<img src="img/go.jpg" class="d-block w-100" alt="..."
 					height="600px">
 			</div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

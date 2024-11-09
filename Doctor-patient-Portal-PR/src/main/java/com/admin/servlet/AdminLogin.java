@@ -36,7 +36,7 @@ public class AdminLogin extends HttpServlet {
 			}
 			else {
 				session.setAttribute("errorMsg", "Invalid Username or Password.");
-				resp.sendRedirect("admin_login.jsp");
+				resp.sendRedirect("admin-login.jsp");
 			}
 			
 			
