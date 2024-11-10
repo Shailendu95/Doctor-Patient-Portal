@@ -97,8 +97,8 @@
 						<%
 						/* get or receive appointment id which is coming through url (from patient.jsp page) */
 						int id = Integer.parseInt(request.getParameter("id"));
-						AppointmentDao appDAO = new AppointmentDao(DBConnection.getConn());
-						Appointment appointment = appDAO.getAppointmentById(id);
+						AppointmentDao appDao = new AppointmentDao(DBConnection.getConn());
+						Appointment appointment = appDao.getAppointmentById(id);
 						
 						%>
 						
