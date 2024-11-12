@@ -1,4 +1,4 @@
-package com.hms.doctor.servlet;
+package com.doctor.servlet;
 
 import java.io.IOException;
 
