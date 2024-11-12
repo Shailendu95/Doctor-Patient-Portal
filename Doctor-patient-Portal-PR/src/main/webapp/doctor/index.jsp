@@ -41,7 +41,7 @@
 
 	<c:if test="${empty doctorObj }">
 
-		<c:redirect url="../doctor_login.jsp"></c:redirect>
+		<c:redirect url="../doctor-login.jsp"></c:redirect>
 
 	</c:if>
 
@@ -54,8 +54,8 @@
 		<%
 		
 		
-		DoctorDao docDAO = new DoctorDao(DBConnection.getConn());
-		int totalNumberOfDoctor = docDAO.countTotalDoctor();
+		DoctorDao docDao = new DoctorDao(DBConnection.getConn());
+		int totalNumberOfDoctor = docDao.countTotalDoctor();
 		
 		//get current login doctor object from session
 		Doctor currentLoginDoctor = (Doctor)session.getAttribute("doctorObj");
@@ -81,7 +81,7 @@
 					<div class="card-body text-center text-success">
 						<i class="fa-solid fa-calendar-check fa-3x"></i><br>
 						<p class="fs-4 text-center">
-							Total Appointment <br> <%= docDAO.countTotalAppointmentByDoctorId(currentLoginDoctor.getId()) %>
+							Total Appointment <br> <%= docDao.countTotalAppointmentByDoctorId(currentLoginDoctor.getId()) %>
 						</p>
 					</div>
 				</div>

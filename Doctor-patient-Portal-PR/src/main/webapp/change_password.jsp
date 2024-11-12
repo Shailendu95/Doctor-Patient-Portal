@@ -31,7 +31,7 @@
 	<!-- if not login then log in first -->
 	<c:if test="${empty userObj }">
 
-		<c:redirect url="/user_login.jsp"></c:redirect>
+		<c:redirect url="/user-login.jsp"></c:redirect>
 
 	</c:if>
 

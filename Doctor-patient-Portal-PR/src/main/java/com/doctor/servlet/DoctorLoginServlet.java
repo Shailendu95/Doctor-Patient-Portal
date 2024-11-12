@@ -29,10 +29,10 @@ public class DoctorLoginServlet extends HttpServlet {
 		HttpSession session = req.getSession();
 
 		//create DB connection
-		DoctorDao docDAO = new DoctorDao(DBConnection.getConn());
+		DoctorDao docDao = new DoctorDao(DBConnection.getConn());
 		
 		//call loginDoctor() method for doctor login which method declared in DoctorDAO 
-		Doctor doctor = docDAO.loginDoctor(email, password);
+		Doctor doctor = docDao.loginDoctor(email, password);
 
 		if (doctor != null) {
 			//means doctor is valid or exist
@@ -42,7 +42,7 @@ public class DoctorLoginServlet extends HttpServlet {
 			resp.sendRedirect("doctor/index.jsp");//doctor index means dashboard of doctors
 		} else {
 			session.setAttribute("errorMsg", "Invalid email or password");
-			resp.sendRedirect("doctor_login.jsp");
+			resp.sendRedirect("doctor-login.jsp");
 		}
 
 	}
