@@ -81,5 +81,29 @@ import com.entity.User;
 			return user;
 
 		}
+		
+		//change password
+		public boolean changePassword(int userId, String newPassword) {
+
+			boolean f = false;
+
+			try {
+
+				String sql = "update user_details set password=? where id=?";
+				PreparedStatement pstmt = this.conn.prepareStatement(sql);
+				pstmt.setString(1, newPassword);
+				pstmt.setInt(2, userId);
+
+				pstmt.executeUpdate();
+
+				f = true;
+
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+
+			return f;
+		}
+
 
 }
